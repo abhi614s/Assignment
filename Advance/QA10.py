@@ -21,10 +21,27 @@ Explanation: B and C will not be able to get any computers. So the answer is 2.
 """
 
 def cafe(N, S):
-    available = N
+  dict1 = {}
+  space = N
+  missed = set()
+  
+  for user in S:
     
-    dict = {}
-    for i in range(len(S)):
-        if i in dict:
-            dict
+    if user not in dict1:
     
+      if space > 0:
+        dict1[user] = True
+        space -= 1
+    
+      else:
+        missed.add(user)
+    
+    else:
+      del dict1[user]
+      space += 1
+      
+  return len(missed)
+
+print(cafe(3,"GACCBDDBAGEE"))
+print(cafe(1,"ABCBAC"))
+
