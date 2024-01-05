@@ -15,3 +15,6 @@ if response % 5 == 0:
 
 if (response % 3 == 0) and (response % 5 == 0):
     print("Brudite - Python Training")
+
+# I can't understand what's the error
+# according to me program is producing the correct output
