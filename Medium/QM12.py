@@ -22,3 +22,4 @@ while chance:
                 print(':::: Welcome ::::')
                 break
     
+# resolved
