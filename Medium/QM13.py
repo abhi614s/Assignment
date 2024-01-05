@@ -5,10 +5,8 @@
 str1 = input('Enter string: ')
 char1 = input('Enter the char: ')[0]
 
-def checkStart(str1, char1):
-    if str1[0] == char1:
-        return True
-    else:
-        return False
+start = lambda string, char : string.startswith(char)
 
-print(checkStart(str1, char1))
+print(start(str1, char1))
+
+# resolved
