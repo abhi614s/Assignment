@@ -7,7 +7,7 @@ n = 7
 
 def stonePiles(n):
     list1 = []
-    i = 0
+    i = 1
     j = 0
 
     while i <= n:
