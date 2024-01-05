@@ -6,7 +6,7 @@ num = int(input("Enter a number: "))
 sum = 0
 
 for i in range(1,(num//2)+1):
-    if num%i == 0:
+    if num % i == 0 and i != num:
         sum += i
 
 if num == sum:
